@@ -1,14 +1,14 @@
 import { component$ } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
+import Footer from "~/components/footer/footer";
+import Header from "~/components/header/header";
 
 export default component$(() => {
   return (
     <>
-      <h1>Salut.</h1>
-      <div>
-        Hé ouais Ethan, ton ami Micky a crée son site statique avec qwik, sois
-        fière.
-      </div>
+      <Header />
+      <h1>Homepage</h1>
+      <Footer />
     </>
   );
 });
