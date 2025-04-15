@@ -69,14 +69,21 @@ export const projets: Projet[] = [
   {
     slug: "circus-claw-machine",
     titre: "Circus Claw Machine",
-    cover: "",
+    cover: "/images/projets/circus-claw-machine/cover.png",
     description:
       "Dans le cadre de la 'Global Game Jam 2024'. \
     The Circus Claw Machine, est un jeu de plateforme qui comprend un réglage dans le menu Jeux. \
     Pour lancer le jeu, il faut aussi réussir à prendre les bons éléments de la fameuse machine à pince.",
     dateDebut: "26/01/2024",
     dateFin: "28/01/2024",
-    galerie: [],
+    galerie: [
+      "/images/projets/circus-claw-machine/cover.png",
+      "/images/projets/circus-claw-machine/galerie1.png",
+      "/images/projets/circus-claw-machine/galerie2.png",
+      "/images/projets/circus-claw-machine/galerie3.png",
+      "/images/projets/circus-claw-machine/galerie4.png",
+      "/images/projets/circus-claw-machine/galerie5.png",
+    ],
     members: ["bluyou", "untypequicode", "PGII33", "mr-white-r"],
     link: "",
   },
