@@ -57,10 +57,10 @@ export default component$(() => {
                     </p>
                   )}
                   <p>
-                    <strong>Date Début :</strong> {projet.dateDebut}
+                    <strong>Commencé le :</strong> {projet.dateDebut}
                   </p>
                   <p>
-                    <strong>Date Fin :</strong> {projet.dateFin}
+                    <strong>Terminé le :</strong> {projet.dateFin}
                   </p>
                 </div>
 
