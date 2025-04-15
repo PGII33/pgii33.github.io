@@ -1,1 +1,0 @@
-import{_ as o}from"./q-CeVrAxnQ.js";import{c as t,q as e}from"./q-D8WpuIEW.js";const a=t(e(()=>o(()=>import("./q-Be5425Vn.js"),[]),"s_B0lqk5IDDy4")),n={title:"Micky MARI",meta:[{name:"description",content:"Portfolio"}]};export{a as default,n as head};
