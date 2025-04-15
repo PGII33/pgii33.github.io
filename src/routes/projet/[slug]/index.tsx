@@ -1,6 +1,12 @@
 import Footer from "~/components/footer/footer";
 import Header from "~/components/header/header";
-import { component$, useResource$, Resource } from "@builder.io/qwik";
+import {
+  component$,
+  useResource$,
+  Resource,
+  useStore,
+  $,
+} from "@builder.io/qwik";
 import { useLocation, type StaticGenerateHandler } from "@builder.io/qwik-city";
 import { projets } from "~/data/projet";
 
@@ -19,6 +25,28 @@ export default component$(() => {
 
   const projetResource = useResource$(() => {
     return projets.find((p) => p.slug === projetSlug);
+  });
+
+  const modalState = useStore({
+    isOpen: false,
+    imageSrc: "",
+  });
+
+  const openModal = $((imageSrc: string) => {
+    modalState.imageSrc = imageSrc;
+    modalState.isOpen = true;
+  });
+
+  const closeModal = $(() => {
+    modalState.isOpen = false;
+    modalState.imageSrc = "";
+  });
+
+  const handleClickOutside = $((event: MouseEvent) => {
+    const target = event.target as HTMLElement;
+    if (target.closest(".modal-content") === null) {
+      closeModal();
+    }
   });
 
   return (
@@ -40,7 +68,8 @@ export default component$(() => {
                       alt={projet.titre}
                       width="800"
                       height="450"
-                      class="w-full rounded-lg"
+                      class="w-full cursor-pointer rounded-lg"
+                      onClick$={() => openModal(projet.cover)}
                     />
                   )}
                   {projet.link && (
@@ -94,7 +123,8 @@ export default component$(() => {
                         alt={`Image ${index + 1}`}
                         width="400"
                         height="300"
-                        class="w-full rounded-lg object-cover"
+                        class="w-full cursor-pointer rounded-lg"
+                        onClick$={() => openModal(img)}
                       />
                     ))}
                   </div>
@@ -106,6 +136,23 @@ export default component$(() => {
           )
         }
       />
+      {modalState.isOpen && (
+        <div
+          class="fixed inset-0 z-50 flex items-center justify-center"
+          onClick$={handleClickOutside}
+        >
+          <div class="modal-content w-full max-w-7xl p-4">
+            <img
+              src={modalState.imageSrc}
+              alt="Agrandie"
+              class="h-auto max-h-[95vh] w-full max-w-full rounded-lg" // Définir des dimensions encore plus grandes ici
+              style="object-contain; width: 90vw; height: auto;" // Assurez-vous que l'image conserve ses proportions et occupe 90% de la largeur de la fenêtre
+              width="800"
+              height="450"
+            />
+          </div>
+        </div>
+      )}
       <Footer />
     </>
   );
