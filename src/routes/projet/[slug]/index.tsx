@@ -32,7 +32,7 @@ export default component$(() => {
     imageSrc: "",
   });
 
-  const openModal = $((imageSrc: string) => {
+  const openModal = $((imageSrc: any) => {
     modalState.imageSrc = imageSrc;
     modalState.isOpen = true;
   });
@@ -62,7 +62,7 @@ export default component$(() => {
               <div class="mb-12 grid grid-cols-1 gap-8 md:grid-cols-2">
                 {/* Colonne gauche */}
                 <div class="space-y-4">
-                  {projet.cover && (
+                  {projet.cover ? (
                     <img
                       src={projet.cover}
                       alt={projet.titre}
@@ -71,6 +71,12 @@ export default component$(() => {
                       class="w-full cursor-pointer rounded-lg"
                       onClick$={() => openModal(projet.cover)}
                     />
+                  ) : (
+                    <div class="w-full rounded-lg bg-gray-200 py-24 text-center">
+                      <p class="text-gray-500">
+                        Aucune image de couverture disponible
+                      </p>
+                    </div>
                   )}
                   {projet.link && (
                     <p>
@@ -112,23 +118,25 @@ export default component$(() => {
               </div>
 
               {/* Galerie */}
-              {projet.galerie.length > 0 && (
-                <>
-                  <h2 class="mb-4 text-xl font-semibold">Galerie</h2>
-                  <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
-                    {projet.galerie.map((img, index) => (
-                      <img
-                        key={index}
-                        src={img}
-                        alt={`Image ${index + 1}`}
-                        width="400"
-                        height="300"
-                        class="w-full cursor-pointer rounded-lg"
-                        onClick$={() => openModal(img)}
-                      />
-                    ))}
-                  </div>
-                </>
+              <h2 class="mb-4 text-xl font-semibold">Galerie</h2>
+              {projet.galerie.length > 0 ? (
+                <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
+                  {projet.galerie.map((img, index) => (
+                    <img
+                      key={index}
+                      src={img}
+                      alt={`Image ${index + 1}`}
+                      width="400"
+                      height="300"
+                      class="w-full cursor-pointer rounded-lg"
+                      onClick$={() => openModal(img)}
+                    />
+                  ))}
+                </div>
+              ) : (
+                <div class="w-full rounded-lg bg-gray-200 py-24 text-center">
+                  <p class="text-gray-500">Aucune image dans la galerie</p>
+                </div>
               )}
             </div>
           ) : (

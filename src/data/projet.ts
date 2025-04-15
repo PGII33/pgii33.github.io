@@ -1,11 +1,28 @@
+import diveQuestCover from "~/data/images/projets/dive-quest/cover.png";
+import diveQuestGalerie1 from "~/data/images/projets/dive-quest/galerie1.png";
+import diveQuestGalerie2 from "~/data/images/projets/dive-quest/galerie2.png";
+import webtoonResumeCover from "~/data/images/projets/webtoon-resume/cover.png";
+import webtoonResumeGalerie1 from "~/data/images/projets/webtoon-resume/galerie1.png";
+import webtoonResumeGalerie2 from "~/data/images/projets/webtoon-resume/galerie2.png";
+import webtoonResumeGalerie3 from "~/data/images/projets/webtoon-resume/galerie3.png";
+import circusClawMachineCover from "~/data/images/projets/circus-claw-machine/cover.png";
+import circusClawMachineGalerie1 from "~/data/images/projets/circus-claw-machine/galerie1.png";
+import circusClawMachineGalerie2 from "~/data/images/projets/circus-claw-machine/galerie2.png";
+import circusClawMachineGalerie3 from "~/data/images/projets/circus-claw-machine/galerie3.png";
+import circusClawMachineGalerie4 from "~/data/images/projets/circus-claw-machine/galerie4.png";
+import circusClawMachineGalerie5 from "~/data/images/projets/circus-claw-machine/galerie5.png";
+import bubloCover from "~/data/images/projets/bublo/cover.png";
+import bubloGalerie1 from "~/data/images/projets/bublo/galerie1.png";
+import bubloGalerie2 from "~/data/images/projets/bublo/galerie2.png";
+
 export interface Projet {
   slug: string;
   titre: string;
-  cover: string; // Chemin vers l'image
+  cover: any; // Utilise 'any' pour les images importées
   description: string;
   dateDebut: string;
   dateFin: string;
-  galerie: string[];
+  galerie: any[]; // Utilise 'any' pour les images importées
   members: string[];
   link: string;
 }
@@ -32,15 +49,11 @@ export const projets: Projet[] = [
   {
     slug: "dive-quest",
     titre: "Dive Quest",
-    cover: "/images/projets/dive-quest/cover.png",
+    cover: diveQuestCover,
     description: "Dive Quest description",
     dateDebut: "05/12/2024",
     dateFin: "06/12/2024",
-    galerie: [
-      "/images/projets/dive-quest/cover.png",
-      "/images/projets/dive-quest/galerie1.png",
-      "/images/projets/dive-quest/galerie2.png",
-    ],
+    galerie: [diveQuestCover, diveQuestGalerie1, diveQuestGalerie2],
     members: [
       "untypequicode",
       "pierrelahaye",
@@ -53,17 +66,17 @@ export const projets: Projet[] = [
   {
     slug: "webtoon-resume",
     titre: "Webtoon Resume",
-    cover: "/images/projets/webtoon-resume/cover.png",
+    cover: webtoonResumeCover,
     description:
       "Webtoon Resume est un site internet dont le contenu vient de mes amis et de moi.\
     Ce site permet de découvrir de nouveaux webtoon et me permet aussi d'évoluer petit à petit dans le web.",
     dateDebut: "30/12/2023",
     dateFin: "12/04/2024",
     galerie: [
-      "/images/projets/webtoon-resume/cover.png",
-      "/images/projets/webtoon-resume/galerie1.png",
-      "/images/projets/webtoon-resume/galerie2.png",
-      "/images/projets/webtoon-resume/galerie3.png",
+      webtoonResumeCover,
+      webtoonResumeGalerie1,
+      webtoonResumeGalerie2,
+      webtoonResumeGalerie3,
     ],
     members: ["PGII33"],
     link: "https://pgii33.github.io/WebtoonResume/",
@@ -71,7 +84,7 @@ export const projets: Projet[] = [
   {
     slug: "circus-claw-machine",
     titre: "Circus Claw Machine",
-    cover: "/images/projets/circus-claw-machine/cover.png",
+    cover: circusClawMachineCover,
     description:
       "Dans le cadre de la 'Global Game Jam 2024'. \
     The Circus Claw Machine, est un jeu de plateforme qui comprend un réglage dans le menu Jeux. \
@@ -79,12 +92,12 @@ export const projets: Projet[] = [
     dateDebut: "26/01/2024",
     dateFin: "28/01/2024",
     galerie: [
-      "/images/projets/circus-claw-machine/cover.png",
-      "/images/projets/circus-claw-machine/galerie1.png",
-      "/images/projets/circus-claw-machine/galerie2.png",
-      "/images/projets/circus-claw-machine/galerie3.png",
-      "/images/projets/circus-claw-machine/galerie4.png",
-      "/images/projets/circus-claw-machine/galerie5.png",
+      circusClawMachineCover,
+      circusClawMachineGalerie1,
+      circusClawMachineGalerie2,
+      circusClawMachineGalerie3,
+      circusClawMachineGalerie4,
+      circusClawMachineGalerie5,
     ],
     members: ["bluyou", "untypequicode", "PGII33", "mr-white-r"],
     link: "",
@@ -92,7 +105,7 @@ export const projets: Projet[] = [
   {
     slug: "bublo",
     titre: "Bublo",
-    cover: "/images/projets/bublo/cover.png",
+    cover: bubloCover,
     description:
       "Bublo est un plateformer dans lequel vous devez, à l'aide de ventilateur, guider une bulle vers la sortie d'un labyrinthe.\n\
     Utilisez la touche espace pour changer et placer des ventilateurs, ou suivre passivement la bulle.\n\
@@ -100,11 +113,7 @@ export const projets: Projet[] = [
      orientez votre ventilateur avec les touches a et e ou la molette de la sourie, et le placez avec le clic droit souris.",
     dateDebut: "24/01/2025",
     dateFin: "26/01/2025",
-    galerie: [
-      "/images/projets/bublo/cover.png",
-      "/images/projets/bublo/galerie1.png",
-      "/images/projets/bublo/galerie2.png",
-    ],
+    galerie: [bubloCover, bubloGalerie1, bubloGalerie2],
     members: [
       "untypequicode",
       "bluyou",

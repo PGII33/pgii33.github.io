@@ -14,7 +14,7 @@ export default component$(() => {
           {projets.map((projet) => (
             <Link href={`/projet/${projet.slug}`} key={projet.slug}>
               <div class="rounded-xl bg-white p-4 shadow transition hover:shadow-lg">
-                {projet.cover && (
+                {projet.cover ? (
                   <img
                     src={projet.cover}
                     alt={projet.titre}
@@ -22,6 +22,12 @@ export default component$(() => {
                     height="300"
                     class="mb-4 h-40 w-full rounded-lg object-cover"
                   />
+                ) : (
+                  <div class="w-full rounded-lg bg-gray-200 py-24 text-center">
+                    <p class="text-gray-500">
+                      Aucune image de couverture disponible
+                    </p>
+                  </div>
                 )}
                 <h2 class="text-xl font-semibold">{projet.titre}</h2>
                 <p class="text-sm text-gray-500">
