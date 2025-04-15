@@ -83,7 +83,7 @@ export const projets: Projet[] = [
   {
     slug: "bublo",
     titre: "Bublo",
-    cover: "",
+    cover: "/images/projets/bublo/cover.png",
     description:
       "Bublo est un plateformer dans lequel vous devez, à l'aide de ventilateur, guider une bulle vers la sortie d'un labyrinthe.\n\
     Utilisez la touche espace pour changer et placer des ventilateurs, ou suivre passivement la bulle.\n\
@@ -91,7 +91,11 @@ export const projets: Projet[] = [
      orientez votre ventilateur avec les touches a et e ou la molette de la sourie, et le placez avec le clic droit souris.",
     dateDebut: "24/01/2025",
     dateFin: "26/01/2025",
-    galerie: [],
+    galerie: [
+      "/images/projets/bublo/cover.png",
+      "/images/projets/bublo/galerie1.png",
+      "/images/projets/bublo/galerie2.png",
+    ],
     members: [
       "untypequicode",
       "bluyou",
