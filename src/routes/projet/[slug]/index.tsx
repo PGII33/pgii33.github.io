@@ -1,9 +1,17 @@
 import Footer from "~/components/footer/footer";
 import Header from "~/components/header/header";
 import { component$, useResource$, Resource } from "@builder.io/qwik";
-import { useLocation } from "@builder.io/qwik-city";
-
+import { useLocation, type StaticGenerateHandler } from "@builder.io/qwik-city";
 import { projets } from "~/data/projet";
+
+// Déclaration asynchrone de la fonction onStaticGenerate
+export const onStaticGenerate: StaticGenerateHandler = async () => {
+  return {
+    params: projets.map((projet) => {
+      return { slug: projet.slug }; // Assuming 'slug' is a string property of 'Projet'
+    }),
+  };
+};
 
 export default component$(() => {
   const location = useLocation();
