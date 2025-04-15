@@ -62,6 +62,8 @@ export const projets: Projet[] = [
     galerie: [
       "/images/projets/webtoon-resume/cover.png",
       "/images/projets/webtoon-resume/galerie1.png",
+      "/images/projets/webtoon-resume/galerie2.png",
+      "/images/projets/webtoon-resume/galerie3.png",
     ],
     members: ["PGII33"],
     link: "https://pgii33.github.io/WebtoonResume/",
