@@ -31,7 +31,6 @@ export default component$(() => {
           }}
         >
           <a href="/projet">Projets</a>
-          <a href="/about">Expériences</a>
           <a href="/about">À Propos</a>
         </div>
       </nav>
