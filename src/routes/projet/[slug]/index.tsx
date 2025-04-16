@@ -10,11 +10,10 @@ import {
 import { useLocation, type StaticGenerateHandler } from "@builder.io/qwik-city";
 import { projets } from "~/data/projet";
 
-// Déclaration asynchrone de la fonction onStaticGenerate
 export const onStaticGenerate: StaticGenerateHandler = async () => {
   return {
     params: projets.map((projet) => {
-      return { slug: projet.slug }; // Assuming 'slug' is a string property of 'Projet'
+      return { slug: projet.slug };
     }),
   };
 };
@@ -25,28 +24,6 @@ export default component$(() => {
 
   const projetResource = useResource$(() => {
     return projets.find((p) => p.slug === projetSlug);
-  });
-
-  const modalState = useStore({
-    isOpen: false,
-    imageSrc: "",
-  });
-
-  const openModal = $((imageSrc: any) => {
-    modalState.imageSrc = imageSrc;
-    modalState.isOpen = true;
-  });
-
-  const closeModal = $(() => {
-    modalState.isOpen = false;
-    modalState.imageSrc = "";
-  });
-
-  const handleClickOutside = $((event: MouseEvent) => {
-    const target = event.target as HTMLElement;
-    if (target.closest(".modal-content") === null) {
-      closeModal();
-    }
   });
 
   return (
@@ -60,16 +37,13 @@ export default component$(() => {
               <h1 class="mb-8 text-4xl font-bold">{projet.titre}</h1>
 
               <div class="mb-12 grid grid-cols-1 gap-8 md:grid-cols-2">
-                {/* Colonne gauche */}
                 <div class="space-y-4">
                   {projet.cover ? (
-                    <img
-                      src={projet.cover}
+                    <projet.cover
                       alt={projet.titre}
                       width="800"
                       height="450"
                       class="w-full cursor-pointer rounded-lg"
-                      onClick$={() => openModal(projet.cover)}
                     />
                   ) : (
                     <div class="w-full rounded-lg bg-gray-200 py-24 text-center">
@@ -99,7 +73,6 @@ export default component$(() => {
                   </p>
                 </div>
 
-                {/* Colonne droite */}
                 <div>
                   <h2 class="mb-2 text-xl font-semibold">Description</h2>
                   <p class="mb-6">{projet.description}</p>
@@ -117,19 +90,16 @@ export default component$(() => {
                 </div>
               </div>
 
-              {/* Galerie */}
               <h2 class="mb-4 text-xl font-semibold">Galerie</h2>
               {projet.galerie.length > 0 ? (
                 <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
-                  {projet.galerie.map((img, index) => (
-                    <img
+                  {projet.galerie.map((ImageComponent, index) => (
+                    <ImageComponent
                       key={index}
-                      src={img}
                       alt={`Image ${index + 1}`}
                       width="400"
                       height="300"
                       class="w-full cursor-pointer rounded-lg"
-                      onClick$={() => openModal(img)}
                     />
                   ))}
                 </div>
@@ -144,23 +114,6 @@ export default component$(() => {
           )
         }
       />
-      {modalState.isOpen && (
-        <div
-          class="fixed inset-0 z-50 flex items-center justify-center"
-          onClick$={handleClickOutside}
-        >
-          <div class="modal-content w-full max-w-7xl p-4">
-            <img
-              src={modalState.imageSrc}
-              alt="Agrandie"
-              class="h-auto max-h-[95vh] w-full max-w-full rounded-lg" // Définir des dimensions encore plus grandes ici
-              style="object-contain; width: 90vw; height: auto;" // Assurez-vous que l'image conserve ses proportions et occupe 90% de la largeur de la fenêtre
-              width="800"
-              height="450"
-            />
-          </div>
-        </div>
-      )}
       <Footer />
     </>
   );

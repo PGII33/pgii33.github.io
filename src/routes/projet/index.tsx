@@ -15,13 +15,7 @@ export default component$(() => {
             <Link href={`/projet/${projet.slug}`} key={projet.slug}>
               <div class="rounded-xl bg-white p-4 shadow transition hover:shadow-lg">
                 {projet.cover ? (
-                  <img
-                    src={projet.cover}
-                    alt={projet.titre}
-                    width="400"
-                    height="300"
-                    class="mb-4 h-40 w-full rounded-lg object-cover"
-                  />
+                  <projet.cover />
                 ) : (
                   <div class="w-full rounded-lg bg-gray-200 py-24 text-center">
                     <p class="text-gray-500">
@@ -29,10 +23,7 @@ export default component$(() => {
                     </p>
                   </div>
                 )}
-                <h2 class="text-xl font-semibold">{projet.titre}</h2>
-                <p class="text-sm text-gray-500">
-                  {projet.dateDebut} → {projet.dateFin}
-                </p>
+                <p>{projet.titre}</p>
               </div>
             </Link>
           ))}
