@@ -1,0 +1,1 @@
+import{H as r,F as o}from"./q-zdz3_WHV.js";import{k as l,b as e,F as n}from"./q-B1c5ccLb.js";import"./q-DmVJrc15.js";const i=()=>l(n,{children:[l(r,null,3,"i8_0"),e("h1",null,null,"Homepage",3,null),l(o,null,3,"i8_1")]},1,"i8_2");export{i as s_B0lqk5IDDy4};
