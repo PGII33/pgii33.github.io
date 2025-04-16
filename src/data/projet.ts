@@ -25,7 +25,7 @@ export interface Projet {
   description: string;
   dateDebut: string;
   dateFin: string;
-  galerie?: ImageComponent[];
+  galerie: ImageComponent[];
   members: string[];
   link: string;
 }

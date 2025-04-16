@@ -1,12 +1,6 @@
 import Footer from "~/components/footer/footer";
 import Header from "~/components/header/header";
-import {
-  component$,
-  useResource$,
-  Resource,
-  useStore,
-  $,
-} from "@builder.io/qwik";
+import { component$, useResource$, Resource } from "@builder.io/qwik";
 import { useLocation, type StaticGenerateHandler } from "@builder.io/qwik-city";
 import { projets } from "~/data/projet";
 
