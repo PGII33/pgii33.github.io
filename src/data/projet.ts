@@ -21,7 +21,6 @@ type ImageComponent = any; // Tu peux le raffiner si tu veux
 export interface Projet {
   slug: string;
   titre: string;
-  cover?: ImageComponent;
   description: string;
   dateDebut: string;
   dateFin: string;
@@ -34,7 +33,6 @@ export const projets: Projet[] = [
   {
     slug: "green-growth",
     titre: "Green Growth",
-    cover: "",
     description:
       "Green Growth est un site web réalisé durant la nuit de l'info en 16H32 par notre équipe de cinq membres",
     dateDebut: "07/12/2023",
@@ -52,7 +50,6 @@ export const projets: Projet[] = [
   {
     slug: "dive-quest",
     titre: "Dive Quest",
-    cover: $(diveQuestCover),
     description: "Dive Quest description",
     dateDebut: "05/12/2024",
     dateFin: "06/12/2024",
@@ -69,7 +66,6 @@ export const projets: Projet[] = [
   {
     slug: "webtoon-resume",
     titre: "Webtoon Resume",
-    cover: $(webtoonResumeCover),
     description:
       "Webtoon Resume est un site internet dont le contenu vient de mes amis et de moi.\
     Ce site permet de découvrir de nouveaux webtoon et me permet aussi d'évoluer petit à petit dans le web.",
@@ -87,7 +83,6 @@ export const projets: Projet[] = [
   {
     slug: "circus-claw-machine",
     titre: "Circus Claw Machine",
-    cover: $(circusClawMachineCover),
     description:
       "Dans le cadre de la 'Global Game Jam 2024'. \
     The Circus Claw Machine, est un jeu de plateforme qui comprend un réglage dans le menu Jeux. \
@@ -108,7 +103,6 @@ export const projets: Projet[] = [
   {
     slug: "bublo",
     titre: "Bublo",
-    cover: $(bubloCover),
     description:
       "Bublo est un plateformer dans lequel vous devez, à l'aide de ventilateur, guider une bulle vers la sortie d'un labyrinthe.\n\
     Utilisez la touche espace pour changer et placer des ventilateurs, ou suivre passivement la bulle.\n\

@@ -14,8 +14,20 @@ export default component$(() => {
           {projets.map((projet) => (
             <Link href={`/projet/${projet.slug}`} key={projet.slug}>
               <div class="rounded-xl bg-white p-4 shadow transition hover:shadow-lg">
-                {projet.cover ? (
-                  <projet.cover />
+                {projet.galerie.length > 0 ? (
+                  <>
+                    {(() => {
+                      const Cover = projet.galerie[0]; // Récupère le composant
+                      return (
+                        <Cover
+                          alt={projet.titre}
+                          width="800"
+                          height="450"
+                          class="w-full cursor-pointer rounded-lg"
+                        />
+                      );
+                    })()}
+                  </>
                 ) : (
                   <div class="w-full rounded-lg bg-gray-200 py-24 text-center">
                     <p class="text-gray-500">

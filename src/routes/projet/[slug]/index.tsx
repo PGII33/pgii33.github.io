@@ -32,13 +32,20 @@ export default component$(() => {
               <h1 class="mb-8 text-4xl font-bold">{projet.titre}</h1>
               <div class="mb-12 grid grid-cols-1 gap-8 md:grid-cols-2">
                 <div class="space-y-4">
-                  {projet.cover ? (
-                    <projet.cover
-                      alt={projet.titre}
-                      width="800"
-                      height="450"
-                      class="w-full cursor-pointer rounded-lg"
-                    />
+                  {projet.galerie.length > 0 ? (
+                    <>
+                      {(() => {
+                        const Cover = projet.galerie[0]; // Récupère le composant
+                        return (
+                          <Cover
+                            alt={projet.titre}
+                            width="800"
+                            height="450"
+                            class="w-full cursor-pointer rounded-lg"
+                          />
+                        );
+                      })()}
+                    </>
                   ) : (
                     <div class="w-full rounded-lg bg-gray-200 py-24 text-center">
                       <p class="text-gray-500">
@@ -46,6 +53,7 @@ export default component$(() => {
                       </p>
                     </div>
                   )}
+
                   {projet.link && (
                     <p>
                       <strong>Lien :</strong>{" "}
