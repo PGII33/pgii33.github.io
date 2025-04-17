@@ -1,1 +1,0 @@
-import{k as e,b as s,F as t}from"./q-B1c5ccLb.js";const n=()=>e(t,{children:s("p",null,{style:"font-size:0.7em; text-align:center;padding: 10px"},"© Micky MARI - Tous droit reservés - 2025",3,null)},3,"Lo_0");export{n as s_vyU09J8k9to};
