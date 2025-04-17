@@ -3,6 +3,7 @@ import Header from "~/components/header/header";
 import { component$, useResource$, Resource } from "@builder.io/qwik";
 import { useLocation, type StaticGenerateHandler } from "@builder.io/qwik-city";
 import { projets } from "~/data/projet";
+import { GalerieZoom } from "~/components/galerie/ImageZoom"; // adapte le chemin si besoin
 
 export const onStaticGenerate: StaticGenerateHandler = async () => {
   return {
@@ -29,7 +30,6 @@ export default component$(() => {
           projet ? (
             <div class="mx-auto max-w-6xl p-8">
               <h1 class="mb-8 text-4xl font-bold">{projet.titre}</h1>
-
               <div class="mb-12 grid grid-cols-1 gap-8 md:grid-cols-2">
                 <div class="space-y-4">
                   {projet.cover ? (
@@ -83,20 +83,9 @@ export default component$(() => {
                   )}
                 </div>
               </div>
-
               <h2 class="mb-4 text-xl font-semibold">Galerie</h2>
               {projet.galerie.length > 0 ? (
-                <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
-                  {projet.galerie.map((ImageComponent, index) => (
-                    <ImageComponent
-                      key={index}
-                      alt={`Image ${index + 1}`}
-                      width="400"
-                      height="300"
-                      class="w-full cursor-pointer rounded-lg"
-                    />
-                  ))}
-                </div>
+                <GalerieZoom images={projet.galerie} />
               ) : (
                 <div class="w-full rounded-lg bg-gray-200 py-24 text-center">
                   <p class="text-gray-500">Aucune image dans la galerie</p>
