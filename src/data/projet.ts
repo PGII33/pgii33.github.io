@@ -12,6 +12,8 @@ import circusClawMachineGalerie2 from "~/data/images/projets/circus-claw-machine
 import circusClawMachineGalerie3 from "~/data/images/projets/circus-claw-machine/galerie3.png?jsx";
 import circusClawMachineGalerie4 from "~/data/images/projets/circus-claw-machine/galerie4.png?jsx";
 import circusClawMachineGalerie5 from "~/data/images/projets/circus-claw-machine/galerie5.png?jsx";
+import circusClawMachineGalerie6 from "~/data/images/projets/circus-claw-machine/galerie6.webp?jsx";
+import greenGrowthCover from "~/data/images/projets/green-growth/cover.webp?jsx";
 import bubloCover from "~/data/images/projets/bublo/cover.png?jsx";
 import bubloGalerie1 from "~/data/images/projets/bublo/galerie1.png?jsx";
 import bubloGalerie2 from "~/data/images/projets/bublo/galerie2.png?jsx";
@@ -37,7 +39,7 @@ export const projets: Projet[] = [
       "Green Growth est un site web réalisé durant la nuit de l'info en 16H32 par notre équipe de cinq membres",
     dateDebut: "07/12/2023",
     dateFin: "08/12/2023",
-    galerie: [],
+    galerie: [$(greenGrowthCover)],
     members: [
       "untypequicode",
       "Ciremy0",
@@ -91,6 +93,7 @@ export const projets: Projet[] = [
     dateFin: "28/01/2024",
     galerie: [
       $(circusClawMachineCover),
+      $(circusClawMachineGalerie6),
       $(circusClawMachineGalerie1),
       $(circusClawMachineGalerie2),
       $(circusClawMachineGalerie3),
