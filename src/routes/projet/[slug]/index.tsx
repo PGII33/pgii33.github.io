@@ -1,5 +1,3 @@
-import Footer from "~/components/footer/footer";
-import Header from "~/components/header/header";
 import { component$, useResource$, Resource } from "@builder.io/qwik";
 import { useLocation, type StaticGenerateHandler } from "@builder.io/qwik-city";
 import { projets } from "~/data/projet";
@@ -23,7 +21,6 @@ export default component$(() => {
 
   return (
     <>
-      <Header />
       <Resource
         value={projetResource}
         onResolved={(projet) =>
@@ -105,7 +102,6 @@ export default component$(() => {
           )
         }
       />
-      <Footer />
     </>
   );
 });
