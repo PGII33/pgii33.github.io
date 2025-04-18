@@ -1,0 +1,28 @@
+/* about.css */
+.about-container {
+  font-size: 1.3em;
+  margin: 1em;
+}
+
+.about-container strong {
+  font-size: 1.5em;
+  color: #3f2a14;
+}
+
+.about-container ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.about-container li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5em;
+}
+
+.about-container img {
+  width: 2em;
+  height: 2em;
+  border-radius: 10%;
+  margin-right: 0.2em;
+}
