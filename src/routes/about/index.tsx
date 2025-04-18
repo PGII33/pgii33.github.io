@@ -1,5 +1,3 @@
-import Footer from "~/components/footer/footer";
-import Header from "~/components/header/header";
 import { component$ } from "@builder.io/qwik";
 import DevImage from "~/data/images/about/code.png?jsx";
 import MusicImage from "~/data/images/about/lecteur-de-musique.png?jsx";
