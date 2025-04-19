@@ -1,4 +1,3 @@
-/* about.css */
 .about-container {
   font-family: "Arial", sans-serif;
   font-size: 1.2em;
@@ -13,11 +12,16 @@
   justify-content: center; /* Centre les éléments horizontalement */
   align-items: flex-start; /* Aligne les éléments en haut */
   margin: 2em auto; /* Centre le conteneur horizontalement */
+  width: calc(100% - 1em); /* Ajoute un espace de 2em de chaque côté */
+  box-sizing: border-box; /* Inclut le padding dans la largeur totale */
+  overflow: hidden; /* Empêche le contenu de déborder */
 }
 
 .about-section {
   flex: 1;
   min-width: 300px;
+  overflow-wrap: break-word; /* Force le texte à se casser sur une nouvelle ligne si nécessaire */
+  word-break: break-word; /* Casser les mots longs */
 }
 
 .about-container strong {
@@ -42,13 +46,14 @@
 .about-container img {
   width: 2.5em;
   height: 2.5em;
-  border-radius: 50%;
   margin-right: 1em;
 }
 
 .about-container p {
   line-height: 1.6;
   color: #555;
+  overflow-wrap: break-word; /* Force le texte à se casser sur une nouvelle ligne si nécessaire */
+  word-break: break-word; /* Casser les mots longs */
 }
 
 .about-container a {
@@ -69,6 +74,8 @@
   min-height: calc(
     100vh - 10em
   ); /* Ajustez cette valeur en fonction de la hauteur de votre header et footer */
+  padding: 0 2em; /* Ajoute un espace de 2em de chaque côté */
+  box-sizing: border-box; /* Inclut le padding dans la largeur totale */
 }
 
 /* Media Query for Responsive Design */
