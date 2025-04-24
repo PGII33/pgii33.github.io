@@ -26,6 +26,13 @@ export default component$(() => {
       min-width: 300px;
     }
 
+    .header-links a:hover,
+    .header-logo a:hover
+    {
+      transform: scale(1.1);
+      transition: transform 0.2s ease-in-out;
+    }
+
     @media (max-width: 768px) {
       .header-nav {
         flex-direction: column;

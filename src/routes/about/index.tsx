@@ -41,23 +41,23 @@ export default component$(() => {
             <strong>Contacts</strong>
             <ul>
               <li>
-                <GithubMarkImage alt="Github Mark" />
                 <a href="https://github.com/pgii33" target="_blank">
+                  <GithubMarkImage alt="Github Mark" />
                   PGII33
                 </a>
               </li>
               <li>
-                <EmailImage alt="Email" />
                 <a href="mailto:micky.sg.mari@gmail.com" target="_blank">
+                  <EmailImage alt="Email" />
                   micky.sg.mari@gmail.com
                 </a>
               </li>
               <li>
-                <LinkedInLogoImage alt="LinkedIn Logo" />
                 <a
                   href="https://www.linkedin.com/in/micky-mari/"
                   target="_blank"
                 >
+                  <LinkedInLogoImage alt="LinkedIn Logo" />
                   micky mari
                 </a>
               </li>
