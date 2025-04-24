@@ -36,9 +36,7 @@ export default component$(() => {
                         return (
                           <Cover
                             alt={projet.titre}
-                            width="800"
-                            height="450"
-                            class="w-full cursor-pointer rounded-lg"
+                            class="aspect-[16/9] h-auto w-full cursor-pointer rounded-lg object-cover"
                           />
                         );
                       })()}

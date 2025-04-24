@@ -28,9 +28,7 @@ export const GalerieZoom = component$(({ images }: GalerieZoomProps) => {
           <div key={index} onClick$={() => (zoomedIndex.value = index)}>
             <ImageComponent
               alt={`Image ${index + 1}`}
-              width="400"
-              height="300"
-              class="thumbnail-img h-auto w-full cursor-pointer rounded-lg"
+              class="thumbnail-img aspect-[16/9] w-full cursor-pointer rounded-lg object-cover"
             />
           </div>
         ))}
@@ -44,8 +42,6 @@ export const GalerieZoom = component$(({ images }: GalerieZoomProps) => {
               return (
                 <ZoomedImage
                   alt={`Image ${zoomedIndex.value + 1}`}
-                  width="1920"
-                  height="1080"
                   class="max-h-[95vh] max-w-[95vw] rounded"
                 />
               );
