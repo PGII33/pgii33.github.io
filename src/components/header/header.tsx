@@ -65,6 +65,7 @@ export default component$(() => {
 
       <div class="header-links">
         <a href="/projet">Projets</a>
+        <a href="/musique">Musiques</a>
         <a href="/about">À Propos</a>
       </div>
     </nav>
