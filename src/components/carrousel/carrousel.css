@@ -1,0 +1,33 @@
+/* Définir les variables de durée d'animation */
+:root {
+  --fade-duration: 0.2s;
+  --text-duration: 0.2s;
+}
+
+.fade-transition {
+  transition: opacity var(--fade-duration) ease;
+}
+
+.fade-hidden {
+  opacity: 0;
+}
+
+.fade-visible {
+  opacity: 1;
+}
+
+.text-transition {
+  transition:
+    opacity var(--text-duration) ease,
+    transform var(--text-duration) ease;
+}
+
+.text-hidden {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.text-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
