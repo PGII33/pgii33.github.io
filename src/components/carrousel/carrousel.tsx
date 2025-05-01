@@ -55,9 +55,9 @@ export const Carrousel = component$(() => {
 
   return (
     <div class="mx-auto max-w-6xl p-6">
-      <div class="flex gap-4 rounded-xl bg-white p-4 hover:shadow-lg">
+      <div class="carrousel-layout flex flex-row gap-4 rounded-xl bg-white p-4 hover:shadow-lg">
         {/* Partie gauche : grande image */}
-        <div class="w-[50%]">
+        <div class="carrousel-left order-1 w-[50%]">
           {(() => {
             const Cover = selectedProjet.value.galerie[0];
             if (typeof Cover !== "function") {
@@ -84,7 +84,7 @@ export const Carrousel = component$(() => {
         </div>
 
         {/* Partie milieu : miniatures */}
-        <div class="flex w-[15%] flex-col gap-[5%]">
+        <div class="carrousel-middle order-2 flex w-[15%] flex-col gap-[5%]">
           {recentProjets.map((projet) => {
             const Cover = projet.galerie[0];
             if (typeof Cover !== "function") {
@@ -110,7 +110,7 @@ export const Carrousel = component$(() => {
 
         {/* Partie droite : titre + description */}
         <div
-          class={`text-transition flex w-[35%] flex-col justify-start ${
+          class={`carrousel-text text-transition order-3 flex w-[35%] flex-col justify-start ${
             isAnimating.value ? "text-hidden" : "text-visible"
           }`}
         >

@@ -31,3 +31,36 @@
   opacity: 1;
   transform: translateY(0);
 }
+
+/* Responsive layout pour mobile */
+@media (max-width: 768px) {
+  .carrousel-layout {
+    flex-direction: column;
+  }
+
+  .carrousel-left,
+  .carrousel-middle,
+  .carrousel-text {
+    width: 100% !important;
+  }
+
+  .carrousel-left {
+    order: 1;
+  }
+
+  .carrousel-middle {
+    order: 2;
+    flex-direction: row;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .carrousel-middle > div {
+    flex: 1;
+  }
+
+  .carrousel-text {
+    order: 3;
+    margin-top: 1rem;
+  }
+}
