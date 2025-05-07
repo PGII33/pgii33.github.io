@@ -36,7 +36,11 @@ export const projets: Projet[] = [
     slug: "green-growth",
     titre: "Green Growth",
     description:
-      "Green Growth est un site web réalisé durant la nuit de l'info en 16H32 par notre équipe de cinq membres",
+      "Green Growth est un site web réalisé durant la nuit de l'info 2023 en 16H32 par notre équipe de cinq membres\
+      dont l'objectif était de répondre à la problématique suivante : \
+      'Faire face au changement climatique : le vrai du faux'.\
+      Le site comporte une partie QCM pour mesurer vos connaissances, \
+      et une partie s'informer, pour acquérir de nouvelles connaissances.",
     dateDebut: "07/12/2023",
     dateFin: "08/12/2023",
     galerie: [$(greenGrowthCover)],
@@ -52,7 +56,10 @@ export const projets: Projet[] = [
   {
     slug: "dive-quest",
     titre: "Dive Quest",
-    description: "Dive Quest description",
+    description:
+      "Dive Quest est un projet issue de la nuit de l'info 2024 dont le sujet était : 'Et si l’océan était un corps humain ?'.\n\
+      Dans Dive Quest, on contrôle un plongeur, dont à partir d'une certaine profondeur les organes sont assombris.\n\
+      En cliquant sur les organes, un texte apparait afin de faire une comparaison entre les organes humains et les mécanismes de l'océan.",
     dateDebut: "05/12/2024",
     dateFin: "06/12/2024",
     galerie: [$(diveQuestCover), $(diveQuestGalerie1), $(diveQuestGalerie2)],
@@ -69,8 +76,10 @@ export const projets: Projet[] = [
     slug: "webtoon-resume",
     titre: "Webtoon Resume",
     description:
-      "Webtoon Resume est un site internet dont le contenu vient de mes amis et de moi.\
-    Ce site permet de découvrir de nouveaux webtoon et me permet aussi d'évoluer petit à petit dans le web.",
+      "Webtoon Resume permet de découvrir de nouveaux Webtoons dont des avis ont étés rédigés\
+     par mes amis et moi.\
+    Ce site a été crée dans une perspective d'évolution sur le développement de site web.\
+    Les contributeurs sont Pandi, Darkendo et moi.",
     dateDebut: "30/12/2023",
     dateFin: "12/04/2024",
     galerie: [
@@ -88,7 +97,8 @@ export const projets: Projet[] = [
     description:
       "Dans le cadre de la 'Global Game Jam 2024'. \
     The Circus Claw Machine, est un jeu de plateforme qui comprend un réglage dans le menu Jeux. \
-    Pour lancer le jeu, il faut aussi réussir à prendre les bons éléments de la fameuse machine à pince.",
+    Pour lancer le jeu, il faut aussi réussir à prendre les bons éléments de la machine à pince.\
+    Attention, choisir certaines orbes pourraient rendre votre aventure plus compliquée.",
     dateDebut: "26/01/2024",
     dateFin: "28/01/2024",
     galerie: [
