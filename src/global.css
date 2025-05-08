@@ -1,8 +1,35 @@
 @import "tailwindcss";
 
+/* Domine - Serif pour le texte */
+@font-face {
+  font-family: "Domine";
+  src: url("/Fonts/Domine/Domine-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 700;
+  font-style: normal;
+}
+
+/* Nunito - Sans serif pour les titres */
+@font-face {
+  font-family: "Nunito";
+  src: url("/Fonts/Nunito/Nunito-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+}
+
 body {
+  font-family: "Domine", serif; /* Police par défaut pour tout le site */
   background-color: #e5dec5;
   height: 100%;
+}
+
+/* Titres avec Nunito */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Nunito", sans-serif;
 }
 
 p,
