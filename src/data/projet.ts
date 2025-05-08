@@ -14,6 +14,8 @@ import circusClawMachineGalerie4 from "~/data/images/projets/circus-claw-machine
 import circusClawMachineGalerie5 from "~/data/images/projets/circus-claw-machine/galerie5.png?jsx";
 import circusClawMachineGalerie6 from "~/data/images/projets/circus-claw-machine/galerie6.webp?jsx";
 import greenGrowthCover from "~/data/images/projets/green-growth/cover.webp?jsx";
+import greenGrowthGalerie1 from "~/data/images/projets/green-growth/galerie1.png?jsx";
+import greenGrowthGalerie2 from "~/data/images/projets/green-growth/galerie2.png?jsx";
 import bubloCover from "~/data/images/projets/bublo/cover.png?jsx";
 import bubloGalerie1 from "~/data/images/projets/bublo/galerie1.png?jsx";
 import bubloGalerie2 from "~/data/images/projets/bublo/galerie2.png?jsx";
@@ -43,7 +45,11 @@ export const projets: Projet[] = [
       et une partie s'informer, pour acquérir de nouvelles connaissances.",
     dateDebut: "07/12/2023",
     dateFin: "08/12/2023",
-    galerie: [$(greenGrowthCover)],
+    galerie: [
+      $(greenGrowthCover),
+      $(greenGrowthGalerie1),
+      $(greenGrowthGalerie2),
+    ],
     members: [
       "untypequicode",
       "Ciremy0",
@@ -51,7 +57,7 @@ export const projets: Projet[] = [
       "Noruaric",
       "Vincentcestmoi",
     ],
-    link: "https://les-codeurs-lunaires.github.io/green-growth/",
+    link: "https://green-growth.untypequicode.fr/",
   },
   {
     slug: "dive-quest",
