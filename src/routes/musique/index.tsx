@@ -7,13 +7,13 @@ export default component$(() => {
       <div class="flex flex-wrap justify-center gap-6">
         {musiques.map((musique) => (
           <div
-            key={musique.slug}
+            key={"music" + musique.slug}
             class="m-3 w-80 rounded-xl bg-[#C8AD7F] p-6 text-center hover:shadow-lg"
           >
             <h1 class="py-3 text-4xl">{musique.titre}</h1>
             <p class="py-3 text-2xl">par {musique.author}</p>
             <audio controls class="w-full py-3">
-              <source src={musique.audio} type="audio/mpeg" />
+              <source src={musique.audio} type="audio/wav" />
             </audio>
             <a
               href={musique.sheet}
