@@ -8,7 +8,7 @@ export default component$(() => {
       font-size: 1.5em;
       width: 100%;
       padding: 1rem;
-      background-color: #D6CBAF;
+      background-color: var(--c-header-color);
       flex-wrap: wrap;
     }
 

@@ -36,7 +36,7 @@ export const GalerieZoom = component$(({ images }: GalerieZoomProps) => {
 
       {zoomedIndex.value !== null && (
         <div class="bg-opacity-70 fixed inset-0 z-50 flex items-center justify-center bg-black">
-          <div class="zoomed-img max-h-[100vh] rounded bg-white p-4 shadow-lg">
+          <div class="zoomed-img max-h-[100vh] rounded bg-[var(--c-bg-sub-color)] p-4 shadow-lg">
             {(() => {
               const ZoomedImage = images[zoomedIndex.value!];
               return (

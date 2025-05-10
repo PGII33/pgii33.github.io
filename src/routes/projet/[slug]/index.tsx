@@ -1,7 +1,7 @@
 import { component$, useResource$, Resource } from "@builder.io/qwik";
 import { useLocation, type StaticGenerateHandler } from "@builder.io/qwik-city";
 import { projets } from "~/data/projet";
-import { GalerieZoom } from "~/components/galerie/ImageZoom"; // adapte le chemin si besoin
+import { GalerieZoom } from "~/components/galerie/ImageZoom";
 
 export const onStaticGenerate: StaticGenerateHandler = async () => {
   return {
@@ -56,7 +56,7 @@ export default component$(() => {
                         href={projet.link}
                         target="_blank"
                         rel="noopener noreferrer"
-                        class="text-blue-500 hover:underline"
+                        class="hover:underline"
                       >
                         {projet.link}
                       </a>
