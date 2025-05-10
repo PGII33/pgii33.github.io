@@ -10,7 +10,7 @@ export default component$(() => {
         <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3">
           {projets.map((projet) => (
             <Link href={`/projet/${projet.slug}`} key={projet.slug}>
-              <div class="rounded-xl bg-white p-4 shadow transition hover:shadow-lg">
+              <div class="rounded-xl bg-[var(--c-bg-sub-color)] p-4 shadow transition hover:shadow-lg">
                 {projet.galerie.length > 0 ? (
                   <>
                     {(() => {

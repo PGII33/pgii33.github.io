@@ -71,7 +71,7 @@ export default component$(() => {
               sur mes projets. N'hésitez pas à me contacter à{" "}
               <a href="mailto:micky.sg.mari@gmail.com">
                 micky.sg.mari@gmail.com
-              </a>{" "}
+              </a>
               pour échanger et partager votre expertise !
             </p>
           </div>

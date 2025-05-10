@@ -1,5 +1,15 @@
 @import "tailwindcss";
 
+:root {
+  --c-header-color: #7c9c9c;
+  --c-bg-color: #a7cdcc;
+  --c-bg-sub-color: #c5dbda;
+  --c-bg-sub2-color: #4b8685;
+  --c-font-title-color: #000000;
+  --c-font-p-color: #000000;
+  --c-font-strong-color: #000000;
+}
+
 /* Domine - Serif pour le texte */
 @font-face {
   font-family: "Domine";
@@ -18,7 +28,7 @@
 
 body {
   font-family: "Domine", serif; /* Police par défaut pour tout le site */
-  background-color: #e5dec5;
+  background-color: var(--c-bg-color);
   height: 100%;
 }
 
@@ -30,10 +40,13 @@ h4,
 h5,
 h6 {
   font-family: "Nunito", sans-serif;
+  color: var(--c-font-title-color);
 }
 
 p,
-a,
-h1 {
-  color: #3f2a14;
+li {
+  color: var(--c-font-p-color);
+}
+a {
+  color: var(--c-font-title-color);
 }
