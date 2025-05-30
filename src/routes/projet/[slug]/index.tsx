@@ -25,7 +25,7 @@ export default component$(() => {
         value={projetResource}
         onResolved={(projet) =>
           projet ? (
-            <div class="mx-auto max-w-6xl p-8">
+            <div class="mx-auto max-w-7xl p-8">
               <h1 class="mb-8 text-4xl font-bold">{projet.titre}</h1>
               <div class="mb-12 grid grid-cols-1 gap-8 md:grid-cols-2">
                 <div class="space-y-4">

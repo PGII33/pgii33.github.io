@@ -1,13 +1,18 @@
 @import "tailwindcss";
+@tailwind utilities;
 
 :root {
-  --c-header-color: #7c9c9c;
-  --c-bg-color: #a7cdcc;
-  --c-bg-sub-color: #c5dbda;
-  --c-bg-sub2-color: #4b8685;
-  --c-font-title-color: #000000;
+  /* Header */
+  --c-header-color: #d6d1d9;
+  --c-header-text-color: #4f4c50;
+
+  /* Body */
+  --c-bg-color: #f1f1f1;
+  --c-bg-sub-color: #c6d1d9;
+  --c-bg-sub2-color: #ffffff;
+  --c-font-title-color: #4f4c50;
   --c-font-p-color: #000000;
-  --c-font-strong-color: #000000;
+  --c-font-strong-color: #605d62;
 }
 
 /* Domine - Serif pour le texte */
@@ -18,10 +23,10 @@
   font-style: normal;
 }
 
-/* Nunito - Sans serif pour les titres */
+/* Roboto - Sans serif pour les titres */
 @font-face {
-  font-family: "Nunito";
-  src: url("/Fonts/Nunito/Nunito-VariableFont_wght.ttf") format("truetype");
+  font-family: "Roboto";
+  src: url("/Fonts/Roboto/Roboto-VariableFont_wght.ttf") format("truetype");
   font-weight: 100 900;
   font-style: normal;
 }
@@ -32,21 +37,19 @@ body {
   height: 100%;
 }
 
-/* Titres avec Nunito */
 h1,
 h2,
 h3,
 h4,
 h5,
-h6 {
-  font-family: "Nunito", sans-serif;
+h6,
+a {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
   color: var(--c-font-title-color);
 }
 
 p,
 li {
   color: var(--c-font-p-color);
-}
-a {
-  color: var(--c-font-title-color);
 }

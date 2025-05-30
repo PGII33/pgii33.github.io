@@ -4,7 +4,9 @@ import { Carrousel } from "~/components/carrousel/carrousel";
 export default component$(() => {
   return (
     <>
-      <h1 class="p-10 text-center text-5xl"> Projets Récents</h1>
+      <h1 class="p-10 text-center" style="font-size: 4rem;">
+        Projets Récents
+      </h1>
       <Carrousel />
     </>
   );
