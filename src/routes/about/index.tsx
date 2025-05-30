@@ -13,32 +13,32 @@ export default component$(() => {
       <div class="main-content">
         <div class="about-container">
           <div class="about-section about-who">
-            <strong>Qui suis-je</strong>
-            <p>
+            <strong>Qui suis-je ?</strong>
+            <p style="text-align : center;">
               Salut, je suis Micky MARI actuellement en CMI OPTIM à l'université
               de Bordeaux. J'aime apprendre de nouvelles choses et développer
               des projets seul et avec mes amis.
             </p>
           </div>
           <div class="about-section about-passions">
-            <strong>Passions</strong>
+            <strong>Passions :</strong>
             <ul>
               <li>
                 <DevImage alt="Développement" />
-                Le développement
+                Développement
               </li>
               <li>
                 <MusicImage alt="Musique" />
-                La musique
+                Musique
               </li>
               <li>
                 <GameImage alt="Jeux vidéos" />
-                Les jeux vidéos
+                Jeux vidéos
               </li>
             </ul>
           </div>
           <div class="about-section about-contacts">
-            <strong>Contacts</strong>
+            <strong>Contacts :</strong>
             <ul>
               <li>
                 <a href="https://github.com/pgii33" target="_blank">
@@ -71,7 +71,7 @@ export default component$(() => {
               sur mes projets. N'hésitez pas à me contacter à{" "}
               <a href="mailto:micky.sg.mari@gmail.com">
                 micky.sg.mari@gmail.com
-              </a>{" "}
+              </a>
               pour échanger et partager votre expertise !
             </p>
           </div>

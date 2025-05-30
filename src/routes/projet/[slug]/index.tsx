@@ -1,7 +1,7 @@
 import { component$, useResource$, Resource } from "@builder.io/qwik";
 import { useLocation, type StaticGenerateHandler } from "@builder.io/qwik-city";
 import { projets } from "~/data/projet";
-import { GalerieZoom } from "~/components/galerie/ImageZoom"; // adapte le chemin si besoin
+import { GalerieZoom } from "~/components/galerie/ImageZoom";
 
 export const onStaticGenerate: StaticGenerateHandler = async () => {
   return {
@@ -25,7 +25,7 @@ export default component$(() => {
         value={projetResource}
         onResolved={(projet) =>
           projet ? (
-            <div class="mx-auto max-w-6xl p-8">
+            <div class="mx-auto max-w-7xl p-8">
               <h1 class="mb-8 text-4xl font-bold">{projet.titre}</h1>
               <div class="mb-12 grid grid-cols-1 gap-8 md:grid-cols-2">
                 <div class="space-y-4">
@@ -56,7 +56,7 @@ export default component$(() => {
                         href={projet.link}
                         target="_blank"
                         rel="noopener noreferrer"
-                        class="text-blue-500 hover:underline"
+                        class="hover:underline"
                       >
                         {projet.link}
                       </a>

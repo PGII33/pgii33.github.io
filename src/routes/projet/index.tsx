@@ -5,12 +5,12 @@ import { component$ } from "@builder.io/qwik";
 export default component$(() => {
   return (
     <>
-      <div class="mx-auto max-w-6xl p-6">
+      <div class="mx-auto max-w-7xl p-6">
         <h1 class="mb-6 text-3xl font-bold">Mes Projets</h1>
         <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3">
           {projets.map((projet) => (
             <Link href={`/projet/${projet.slug}`} key={projet.slug}>
-              <div class="rounded-xl bg-white p-4 shadow transition hover:shadow-lg">
+              <div class="rounded-xl bg-[var(--c-bg-sub-color)] p-4 shadow transition hover:shadow-lg">
                 {projet.galerie.length > 0 ? (
                   <>
                     {(() => {
