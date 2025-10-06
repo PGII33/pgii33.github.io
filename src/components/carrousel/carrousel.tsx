@@ -54,7 +54,7 @@ export const Carrousel = component$(() => {
   });
 
   return (
-    <div class="mx-auto max-w-6xl p-6">
+    <div class="mx-auto max-w-7xl p-6">
       <div class="carrousel-layout flex flex-row gap-4 rounded-xl bg-[var(--c-bg-sub-color)] p-4 hover:shadow-lg">
         {/* Partie gauche : grande image */}
         <div class="carrousel-left order-1 w-[50%]">
