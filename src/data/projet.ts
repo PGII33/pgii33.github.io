@@ -19,6 +19,12 @@ import greenGrowthGalerie2 from "~/data/images/projets/green-growth/galerie2.png
 import bubloCover from "~/data/images/projets/bublo/cover.png?jsx";
 import bubloGalerie1 from "~/data/images/projets/bublo/galerie1.png?jsx";
 import bubloGalerie2 from "~/data/images/projets/bublo/galerie2.png?jsx";
+import hexMasterCover from "~/data/images/projets/hexmaster/cover.png?jsx";
+import hexMasterGalerie1 from "~/data/images/projets/hexmaster/galerie1.png?jsx";
+import hexMasterGalerie2 from "~/data/images/projets/hexmaster/galerie2.png?jsx";
+import hexMasterGalerie3 from "~/data/images/projets/hexmaster/galerie3.png?jsx";
+import hexMasterGalerie4 from "~/data/images/projets/hexmaster/galerie4.png?jsx";
+import hexMasterGalerie5 from "~/data/images/projets/hexmaster/galerie5.png?jsx";
 
 type ImageComponent = any; // Tu peux le raffiner si tu veux
 
@@ -95,7 +101,7 @@ export const projets: Projet[] = [
       $(webtoonResumeGalerie3),
     ],
     members: ["PGII33"],
-    link: "https://pgii33.github.io/WebtoonResume/",
+    link: "https://pgii33.github.io/WebtoonResume",
   },
   {
     slug: "circus-claw-machine",
@@ -141,5 +147,30 @@ export const projets: Projet[] = [
       "glagolem",
     ],
     link: "",
+  },
+  {
+    slug: "hexmaster",
+    titre: "HexMaster",
+    description:
+      "HexMaster est un jeu des stratégie en tour par tour dans lequel on essaie de battre \
+      d'autres factions. Le but est de maîtriser chaque faction. \
+      Pour cela, vous devrez vaincre la campagne.",
+    dateDebut: "29/08/2025",
+    dateFin: "En cours (v1.0)",
+    galerie: [
+      $(hexMasterCover),
+      $(hexMasterGalerie1),
+      $(hexMasterGalerie2),
+      $(hexMasterGalerie3),
+      $(hexMasterGalerie4),
+      $(hexMasterGalerie5),
+    ],
+    members: [
+      "PGII33 (dev)",
+      "JOUSON-Mathis (contributeur)",
+      "Vincentcestmoi (contributeurs)",
+      "Anaëlle (FAN)",
+    ],
+    link: "https://github.com/PGII33/HexMaster/releases",
   },
 ];
