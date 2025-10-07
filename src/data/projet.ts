@@ -173,4 +173,25 @@ export const projets: Projet[] = [
     ],
     link: "https://github.com/PGII33/HexMaster/releases",
   },
+  {
+    slug: "maze-cmi",
+    titre: "Maze CMI",
+    description: "Projet de création d'un labyrinthe pour la matière CMI",
+    dateDebut: "16/09/2024",
+    dateFin: "13/12/2024",
+    galerie: [], // TODO
+    members: ["PGII33", "Vincentcestmoi"],
+    link: "https://github.com/Vincentcestmoi/maze",
+  },
+  {
+    slug: "finding-nemo",
+    titre: "Finding Nemo",
+    description:
+      "Projet d'optimisation de sauvetage de poissons. Actuellement, le projet est en privé.",
+    dateDebut: "20/02/2024",
+    dateFin: "03/06/2024",
+    galerie: [], // TODO
+    members: ["PGII33", "untypequicode"],
+    link: "https://github.com/untypequicode/finding-nemo",
+  },
 ];
