@@ -1,0 +1,1 @@
+import{C as s}from"./q-C5r20_F1.js";import{k as r,b as t,F as e}from"./q-DI6q-dMs.js";import"./q-Byfm7hEZ.js";const a=()=>r(e,{children:[t("h1",null,{class:"p-10 text-center",style:"font-size: 4rem;"},"Projets Récents",3,null),r(s,null,3,"i8_0")]},1,"i8_1");export{a as s_B0lqk5IDDy4};
