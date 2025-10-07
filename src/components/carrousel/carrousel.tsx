@@ -115,7 +115,7 @@ export const Carrousel = component$(() => {
           }`}
         >
           <h2 class="text-5xl">{selectedProjet.value.titre}</h2>
-          <p class="mt-2 max-h-[6rem] overflow-hidden text-ellipsis whitespace-pre-line">
+          <p class="mt-2 overflow-hidden text-ellipsis whitespace-pre-line">
             {selectedProjet.value.description}
           </p>
         </div>

@@ -25,6 +25,16 @@ import hexMasterGalerie2 from "~/data/images/projets/hexmaster/galerie2.png?jsx"
 import hexMasterGalerie3 from "~/data/images/projets/hexmaster/galerie3.png?jsx";
 import hexMasterGalerie4 from "~/data/images/projets/hexmaster/galerie4.png?jsx";
 import hexMasterGalerie5 from "~/data/images/projets/hexmaster/galerie5.png?jsx";
+import labyrinthCover from "~/data/images/projets/labyrinth/cover.png?jsx";
+import labyrinthGalerie1 from "~/data/images/projets/labyrinth/galerie1.png?jsx";
+import labyrinthGalerie2 from "~/data/images/projets/labyrinth/galerie2.png?jsx";
+import labyrinthGalerie3 from "~/data/images/projets/labyrinth/galerie3.png?jsx";
+import labyrinthGalerie4 from "~/data/images/projets/labyrinth/galerie4.png?jsx";
+import labyrinthGalerie5 from "~/data/images/projets/labyrinth/galerie5.png?jsx";
+import labyrinthGalerie6 from "~/data/images/projets/labyrinth/galerie6.png?jsx";
+import labyrinthGalerie7 from "~/data/images/projets/labyrinth/galerie7.png?jsx";
+import labyrinthGalerie8 from "~/data/images/projets/labyrinth/galerie8.png?jsx";
+import labyrinthGalerie9 from "~/data/images/projets/labyrinth/galerie9.png?jsx";
 
 type ImageComponent = any; // Tu peux le raffiner si tu veux
 
@@ -172,5 +182,37 @@ export const projets: Projet[] = [
       "Anaëlle (FAN)",
     ],
     link: "https://github.com/PGII33/HexMaster/releases",
+  },
+  {
+    slug: "labyrinth",
+    titre: "Labyrinth",
+    description: "Projet de création de labyrinthes et de solveurs dans le cadre de la matière \
+     'projet de programmation' du complément CMI",
+    dateDebut: "18/09/2024",
+    dateFin: "14/03/2025",
+    galerie: [$(labyrinthCover), 
+      $(labyrinthGalerie1), 
+      $(labyrinthGalerie2), 
+      $(labyrinthGalerie3), 
+      $(labyrinthGalerie4),
+      $(labyrinthGalerie5),
+      $(labyrinthGalerie6),
+      $(labyrinthGalerie7),
+      $(labyrinthGalerie8),
+      $(labyrinthGalerie9)
+    ],
+    members: ["PGII33", "Vincentcestmoi, AnMi79"],
+    link: "https://github.com/Universite-de-Bordeaux/labyrinth",
+  },
+  {
+    slug: "finding-nemo",
+    titre: "Finding Nemo",
+    description:
+      "Projet d'optimisation de sauvetage de poissons. Actuellement, le projet est en privé.",
+    dateDebut: "20/02/2024",
+    dateFin: "03/06/2024",
+    galerie: [], // TODO
+    members: ["PGII33", "untypequicode"],
+    link: "https://github.com/untypequicode/finding-nemo",
   },
 ];

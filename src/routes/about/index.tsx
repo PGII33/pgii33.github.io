@@ -14,10 +14,13 @@ export default component$(() => {
         <div class="about-container">
           <div class="about-section about-who">
             <strong>Qui suis-je ?</strong>
-            <p style="text-align : center;">
+            <p>
               Salut, je suis Micky MARI actuellement en CMI OPTIM à l'université
-              de Bordeaux. J'aime apprendre de nouvelles choses et développer
-              des projets seul et avec mes amis.
+              de Bordeaux. <br />
+              J'aime apprendre de nouvelles choses et développer des projets
+              <br />
+              seul et avec mes amis.
+              <br />
             </p>
           </div>
           <div class="about-section about-passions">

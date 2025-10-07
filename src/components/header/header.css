@@ -8,6 +8,12 @@
   flex-wrap: wrap;
 }
 
+hr {
+  height: 1px;
+  background-color: var(--c-font-title-color);
+  border: none;
+}
+
 .header-logo {
   width: 20%;
   display: flex;
