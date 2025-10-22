@@ -45,6 +45,7 @@ export interface Projet {
   dateDebut: string;
   dateFin: string;
   galerie: ImageComponent[];
+  galerieDescriptions?: string[];
   members: string[];
   link: string;
 }
@@ -66,6 +67,11 @@ export const projets: Projet[] = [
       $(greenGrowthGalerie1),
       $(greenGrowthGalerie2),
     ],
+    galerieDescriptions: [
+      "Logo",
+      "Page d'accueil",
+      "QCM",
+    ],
     members: [
       "untypequicode",
       "Ciremy0",
@@ -85,6 +91,11 @@ export const projets: Projet[] = [
     dateDebut: "05/12/2024",
     dateFin: "06/12/2024",
     galerie: [$(diveQuestCover), $(diveQuestGalerie1), $(diveQuestGalerie2)],
+    galerieDescriptions: [
+      "Plongeur à la surface",
+      "Bulle informative sur les veines et artères",
+      "Bulle informative sur la glande thyroïde",
+    ],
     members: [
       "untypequicode",
       "pierrelahaye",
@@ -110,6 +121,12 @@ export const projets: Projet[] = [
       $(webtoonResumeGalerie2),
       $(webtoonResumeGalerie3),
     ],
+    galerieDescriptions: [
+      "Page d'accueil",
+      "Catalogue de webtoons avec menu déroulant",
+      "Trié par genre (ici action)",
+      "Trié par statut (ici terminé)",
+    ],
     members: ["PGII33"],
     link: "https://pgii33.github.io/WebtoonResume",
   },
@@ -132,6 +149,15 @@ export const projets: Projet[] = [
       $(circusClawMachineGalerie4),
       $(circusClawMachineGalerie5),
     ],
+    galerieDescriptions: [
+      "Écran titre",
+      "Personnage avec la machine à pince à ses côtés",
+      "Menu arcade",
+      "Menu sélection des paramètres",
+      "Niveau avec canon",
+      "Niveau avec tambours",
+      "Niveau avec chaussures de clowns",
+    ],
     members: ["bluyou", "untypequicode", "PGII33", "mr-white-r"],
     link: "",
   },
@@ -146,6 +172,11 @@ export const projets: Projet[] = [
     dateDebut: "24/01/2025",
     dateFin: "26/01/2025",
     galerie: [$(bubloCover), $(bubloGalerie1), $(bubloGalerie2)],
+    galerieDescriptions: [
+      "Écran principal",
+      "Niveau ",
+      "Niveau ",
+    ],
     members: [
       "untypequicode",
       "bluyou",
@@ -175,6 +206,14 @@ export const projets: Projet[] = [
       $(hexMasterGalerie4),
       $(hexMasterGalerie5),
     ],
+    galerieDescriptions: [
+      "Logo",
+      "Menu principal",
+      "Menu jouer",
+      "Écran de sélection des chapitres",
+      "Placement des unités sur la carte",
+      "Phase de combat",
+    ],
     members: [
       "PGII33 (dev)",
       "JOUSON-Mathis (contributeur)",
@@ -200,6 +239,18 @@ export const projets: Projet[] = [
       $(labyrinthGalerie7),
       $(labyrinthGalerie8),
       $(labyrinthGalerie9)
+    ],
+    galerieDescriptions: [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "Recherche de cycle",
+      "Meilleur sortie d'un labyrinthe",
     ],
     members: ["PGII33", "Vincentcestmoi, AnMi79"],
     link: "https://github.com/Universite-de-Bordeaux/labyrinth",
