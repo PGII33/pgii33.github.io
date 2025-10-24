@@ -32,9 +32,6 @@ import labyrinthGalerie3 from "~/data/images/projets/labyrinth/galerie3.png?jsx"
 import labyrinthGalerie4 from "~/data/images/projets/labyrinth/galerie4.png?jsx";
 import labyrinthGalerie5 from "~/data/images/projets/labyrinth/galerie5.png?jsx";
 import labyrinthGalerie6 from "~/data/images/projets/labyrinth/galerie6.png?jsx";
-import labyrinthGalerie7 from "~/data/images/projets/labyrinth/galerie7.png?jsx";
-import labyrinthGalerie8 from "~/data/images/projets/labyrinth/galerie8.png?jsx";
-import labyrinthGalerie9 from "~/data/images/projets/labyrinth/galerie9.png?jsx";
 
 type ImageComponent = any; // Tu peux le raffiner si tu veux
 
@@ -67,11 +64,7 @@ export const projets: Projet[] = [
       $(greenGrowthGalerie1),
       $(greenGrowthGalerie2),
     ],
-    galerieDescriptions: [
-      "Logo",
-      "Page d'accueil",
-      "QCM",
-    ],
+    galerieDescriptions: ["Logo", "Page d'accueil", "QCM"],
     members: [
       "untypequicode",
       "Ciremy0",
@@ -172,11 +165,7 @@ export const projets: Projet[] = [
     dateDebut: "24/01/2025",
     dateFin: "26/01/2025",
     galerie: [$(bubloCover), $(bubloGalerie1), $(bubloGalerie2)],
-    galerieDescriptions: [
-      "Écran principal",
-      "Niveau ",
-      "Niveau ",
-    ],
+    galerieDescriptions: ["Écran principal", "Niveau ", "Niveau "],
     members: [
       "untypequicode",
       "bluyou",
@@ -225,34 +214,33 @@ export const projets: Projet[] = [
   {
     slug: "labyrinth",
     titre: "Labyrinth",
-    description: "Projet de création de labyrinthes et de solveurs dans le cadre de la matière \
+    description:
+      "Projet de création de labyrinthes et de solveurs dans le cadre de la matière \
      'projet de programmation' du complément CMI",
     dateDebut: "18/09/2024",
     dateFin: "14/03/2025",
-    galerie: [$(labyrinthCover), 
-      $(labyrinthGalerie1), 
-      $(labyrinthGalerie2), 
-      $(labyrinthGalerie3), 
+    galerie: [
+      $(labyrinthCover),
+      $(labyrinthGalerie1),
+      $(labyrinthGalerie2),
+      $(labyrinthGalerie3),
       $(labyrinthGalerie4),
       $(labyrinthGalerie5),
       $(labyrinthGalerie6),
-      $(labyrinthGalerie7),
-      $(labyrinthGalerie8),
-      $(labyrinthGalerie9)
     ],
     galerieDescriptions: [
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
+      "10x10 By Path Maze",
+      "Usage",
+      "10x10 Comb Maze",
+      "10x10 One Way Maze",
+      "10x10 One Comb Maze",
+      "10x10 Hunt and Kill Maze",
+      "10x10 Cross Maze",
+      "10x10 Straight Maze",
       "Recherche de cycle",
       "Meilleur sortie d'un labyrinthe",
     ],
-    members: ["PGII33", "Vincentcestmoi, AnMi79"],
+    members: ["PGII33", "Vincentcestmoi", "AnMi79"],
     link: "https://github.com/Universite-de-Bordeaux/labyrinth",
   },
   {
@@ -263,7 +251,7 @@ export const projets: Projet[] = [
     dateDebut: "20/02/2024",
     dateFin: "03/06/2024",
     galerie: [], // TODO
-    members: ["PGII33", "untypequicode"],
+    members: ["PGII33", "untypequicode", "quentin-msns"],
     link: "https://github.com/untypequicode/finding-nemo",
   },
 ];
