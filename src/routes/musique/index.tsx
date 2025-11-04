@@ -8,7 +8,7 @@ export default component$(() => {
         {musiques.map((musique) => (
           <div
             key={"music" + musique.slug}
-            class="m-3 w-80 rounded-xl bg-[var(--c-bg-sub-color)] p-6 text-center hover:shadow-lg"
+            class="m-4 w-80 rounded-xl bg-[var(--c-bg-sub-color)] p-6 text-center hover:shadow-lg"
           >
             <h1 class="py-3 text-4xl">{musique.titre}</h1>
             <p class="py-3 text-2xl">par {musique.author}</p>
