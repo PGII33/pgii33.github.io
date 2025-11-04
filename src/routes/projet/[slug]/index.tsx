@@ -88,7 +88,10 @@ export default component$(() => {
               </div>
               <h2 class="mb-4 text-xl font-semibold">Galerie</h2>
               {projet.galerie.length > 0 ? (
-                <GalerieZoom images={projet.galerie} />
+                <GalerieZoom 
+                  images={projet.galerie} 
+                  descriptions={projet.galerieDescriptions}
+                />
               ) : (
                 <div class="w-full rounded-lg bg-gray-200 py-24 text-center">
                   <p class="text-gray-500">Aucune image dans la galerie</p>
