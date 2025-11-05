@@ -56,36 +56,37 @@ export const GalerieZoom = component$(({ images, descriptions }: GalerieZoomProp
 
       {zoomedIndex.value !== null && (
         <div class="fixed inset-0 z-50 flex items-center justify-center backdrop-blur-md bg-black/30">
-          <div class="zoomed-img relative max-h-[100vh] max-w-[90vw] rounded-lg bg-[var(--c-bg-sub-color)] p-6 shadow-2xl">
+          <button
+            onClick$={closeZoom}
+            class="absolute right-4 top-4 rounded-full bg-red-500 px-3 py-1 text-white transition-colors hover:bg-red-600 z-10"
+            aria-label="Fermer"
+          >
+            ✕
+          </button>
+          
+          {/* Flèche gauche */}
+          {images.length > 1 && (
             <button
-              onClick$={closeZoom}
-              class="absolute right-2 top-2 rounded-full bg-red-500 px-3 py-1 text-white transition-colors hover:bg-red-600 z-10"
-              aria-label="Fermer"
+              onClick$={prevImage}
+              class="nav-arrow fixed left-4 top-1/2 -translate-y-1/2 rounded-full bg-white/80 dark:bg-gray-800/80 p-3 text-2xl text-gray-800 dark:text-white transition-all hover:bg-white dark:hover:bg-gray-800 hover:scale-110 shadow-lg z-10"
+              aria-label="Image précédente"
             >
-              ✕
+              ‹
             </button>
-            
-            {/* Flèche gauche */}
-            {images.length > 1 && (
-              <button
-                onClick$={prevImage}
-                class="nav-arrow absolute left-2 top-1/2 -translate-y-1/2 rounded-full bg-white/80 dark:bg-gray-800/80 p-3 text-2xl text-gray-800 dark:text-white transition-all hover:bg-white dark:hover:bg-gray-800 hover:scale-110 shadow-lg z-10"
-                aria-label="Image précédente"
-              >
-                ‹
-              </button>
-            )}
-            
-            {/* Flèche droite */}
-            {images.length > 1 && (
-              <button
-                onClick$={nextImage}
-                class="nav-arrow absolute right-2 top-1/2 -translate-y-1/2 rounded-full bg-white/80 dark:bg-gray-800/80 p-3 text-2xl text-gray-800 dark:text-white transition-all hover:bg-white dark:hover:bg-gray-800 hover:scale-110 shadow-lg z-10"
-                aria-label="Image suivante"
-              >
-                ›
-              </button>
-            )}
+          )}
+          
+          {/* Flèche droite */}
+          {images.length > 1 && (
+            <button
+              onClick$={nextImage}
+              class="nav-arrow fixed right-4 top-1/2 -translate-y-1/2 rounded-full bg-white/80 dark:bg-gray-800/80 p-3 text-2xl text-gray-800 dark:text-white transition-all hover:bg-white dark:hover:bg-gray-800 hover:scale-110 shadow-lg z-10"
+              aria-label="Image suivante"
+            >
+              ›
+            </button>
+          )}
+          
+          <div class="zoomed-img relative max-h-[100vh] max-w-[90vw] rounded-lg bg-[var(--c-bg-sub-color)] p-6 shadow-2xl">
             
             <div class="flex flex-col items-center gap-4">
               {(() => {
