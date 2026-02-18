@@ -70,11 +70,12 @@ export default component$(() => {
             <strong>Des conseils ?</strong>
             <p>
               Vous êtes expérimenté dans le développement, la musique ou les
-              jeux vidéo ? J'aimerais beaucoup avoir votre avis et vos conseils
+              jeux vidéo ? J'aimerais beaucoup avoir votre avis et vos conseils 
               sur mes projets. N'hésitez pas à me contacter à{" "}
               <a href="mailto:micky.sg.mari@gmail.com">
                 micky.sg.mari@gmail.com
               </a>
+              {" "}
               pour échanger et partager votre expertise !
             </p>
           </div>
