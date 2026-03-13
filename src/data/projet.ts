@@ -32,6 +32,7 @@ import labyrinthGalerie3 from "~/data/images/projets/labyrinth/galerie3.png?jsx"
 import labyrinthGalerie4 from "~/data/images/projets/labyrinth/galerie4.png?jsx";
 import labyrinthGalerie5 from "~/data/images/projets/labyrinth/galerie5.png?jsx";
 import labyrinthGalerie6 from "~/data/images/projets/labyrinth/galerie6.png?jsx";
+import dup3Cover from "~/data/images/projets/dup3/cover.png?jsx";
 
 type ImageComponent = any; // Tu peux le raffiner si tu veux
 
@@ -254,4 +255,29 @@ export const projets: Projet[] = [
     members: ["PGII33", "untypequicode", "quentin-msns"],
     link: "https://github.com/untypequicode/finding-nemo",
   },
+  {
+    slug: "dup3",
+    titre: "dup3",
+    description:
+      "Nous avons réalisé un site pédagogique, qui permet de voir que certains appareils\
+       peuvent avoir des effets différents selon la manière dont ils sont fabriqués et des\
+        composants utilisés. Le site est aussi plutôt ludique et permet en arrivant au bout\
+         (plutôt rapidement) de pouvoir jouer au Snake 'caché'.",
+    dateDebut: "04/12/2025",
+    dateFin: "05/12/2025",
+    galerie: [$(dup3Cover)],
+    members: ["PGII33", "YarkioL", "JOUSON-Mathis"],
+    link: "https://dup3-ndi.github.io/dup3/",
+  },
+  {
+    slug: "hexmaster2",
+    titre: "HexMaster2",
+    description:
+      "La successeur de HexMaster. Ce jeu est bien plus ambitieux et complexe que son prédécesseur.",
+    dateDebut: "",
+    dateFin: "",
+    galerie: [], // TODO
+    members: ["PGII33"],
+    link: "https://github.com/PGII33/HexMaster2",
+  }
 ];

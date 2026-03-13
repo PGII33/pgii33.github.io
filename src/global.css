@@ -3,16 +3,16 @@
 
 :root {
   /* Header */
-  --c-header-color: #d6d1d9;
-  --c-header-text-color: #4f4c50;
+  --c-header-color: #000000;
+  --c-header-text-color: #a5dfee;
 
   /* Body */
-  --c-bg-color: #f1f1f1;
-  --c-bg-sub-color: #c6d1d9;
-  --c-bg-sub2-color: #ffffff;
-  --c-font-title-color: #4f4c50;
-  --c-font-p-color: #000000;
-  --c-font-strong-color: #605d62;
+  --c-bg-color: #000000;
+  --c-bg-sub-color: #0d2a3f;
+  --c-bg-sub2-color: #0400f8;
+  --c-font-title-color: #a5dfee;
+  --c-font-p-color: #30ffc1;
+  --c-font-strong-color: #9900ff;
 }
 
 /* Domine - Serif pour le texte */
