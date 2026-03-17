@@ -6,6 +6,8 @@ import declinSheet from "~/data/musiques/sheets/PGII - Déclin.pdf";
 import declinAudio from "~/data/musiques/audio/PGII - Déclin.wav";
 import insomnieAccompagnementSheet from "~/data/musiques/sheets/PGII - Insomnie (accompagnement).pdf";
 import insomnieAccompagnementAudio from "~/data/musiques/audio/PGII - Insomnie (accompagnement).wav";
+import pressionSheet from "~/data/musiques/sheets/PGII - Pression.pdf";
+import pressionAudio from "~/data/musiques/audio/PGII - Pression.wav";
 
 export interface Musique {
   slug: string;
@@ -43,5 +45,13 @@ export const musiques: Musique[] = [
     author: "PGII",
     sheet: insomnieAccompagnementSheet,
     audio: insomnieAccompagnementAudio,
+  },
+  {
+    slug: "pression",
+    titre: "Pression",
+    author: "PGII",
+    sheet: pressionSheet,
+    audio: pressionAudio,
   }
+
 ];
