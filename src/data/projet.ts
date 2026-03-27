@@ -187,7 +187,7 @@ export const projets: Projet[] = [
       d'autres factions. Le but est de maîtriser chaque faction. \
       Pour cela, vous devrez vaincre la campagne.",
     dateDebut: "29/08/2025",
-    dateFin: "En cours (v1.0)",
+    dateFin: "13/03/2026",
     galerie: [
       $(hexMasterCover),
       $(hexMasterGalerie1),
